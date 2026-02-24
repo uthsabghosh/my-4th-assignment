@@ -3,310 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application Tracker</title>
+    <title>Eshanto Ghop Apurbo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+<link rel="stylesheet" href="styles/portfolio.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+<body class="font-open-sans">
+    
+<header>
+    <nav>
+       <div class="logo">
+        <h2>Ma<span class="color-orange">r</span>y</h2>
+       </div>
 
-<body>
-    <header class="lg:w-[1110px] lg:h-[149px] mx-auto mt-12">
-        <h1 class="text-4xl font-bold">Job Application Tracker</h1>
+<ul class="menu">
+<li><a href="">Portfolio</a></li>
+<li><a href="">Blog</a></li>
+<li><button class="btn">Hire me</button></li>
+</ul>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-5">
-            <div class="text-xl font-semibold p-5 rounded-md shadow-sm">
-                <p class="text-sm">Total</p>
-                <p id="Total">0</p>
-            </div>
-
-            <div class="text-xl font-semibold p-5 rounded-md shadow-sm">
-                <p class="text-sm">Interview</p>
-                <p id="Interview" class="text-green-500">0</p>
-            </div>
-
-            <div class="text-xl font-semibold p-5 rounded-md shadow-sm">
-                <p class="text-sm">Rejected</p>
-                <p id="Rejected" class="text-red-500">0</p>
-            </div>
-        </div>
-    </header>
-
-    <hr class="lg:w-[1110px] my-8 mx-auto text-gray-400">
-
-    <main class="lg:w-[1110px] mx-auto">
-        <div class="flex justify-between items-center">
-            <h1 class="text-3xl font-bold">Available Jobs</h1>
-            <p class="text-2xl font-semibold text-gray-400">8 jobs</p>
-        </div>
-
-        
-        <section class="my-6">
-            <button onclick="toggleStyle('all-job-btn')" class="bg-blue-500 text-white px-6 py-2 rounded-lg" id="all-job-btn">All</button>
-            <button onclick="toggleStyle('interview-job-btn')" class="bg-gray-400 px-6 py-2 rounded-lg" id="interview-job-btn">Interview</button>
-            <button onclick="toggleStyle('rejected-job-btn')" class="bg-gray-400 px-6 py-2 rounded-lg" id="rejected-job-btn">Rejected</button>
-        </section>
-
-        <!-- Filtered cards -->
-        <section id="filtered-section" class="hidden space-y-8">
-            
-        </section>
-
-        
-         
-<!--  all card section -->
-    <section id="all-cards" class="space-y-8">
-        <!-- card 1 -->
-        <div class="card flex justify-between border border-white shadow-lg p-8">
-            <!-- main part-1 -->
-             <div class="space-y-6">
-                <!-- part -1 -->
-                 <div>
-                    <h1 class="fristCorp text-2xl font-semibold">Mobile First Corp</h1>
-                <p class="nativeDeveloper text-gray-400">React Native Developer</p>
-                 </div>
-                 <!-- part -2 -->
-                  <div>
-                    <p class="remoteJob text-gray-400">Remote• Full-time •$130,000 - $175,000</p>
-                  </div>
-                  <!-- part -3 -->
-                    <p class="status">Not Applied</p>
-                    <p class="notes ">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p> 
-
-                    <div class="flex gap-3">
-                        <button class="interview-btn shadow-lg border border-green-400 px-4 py-2 text-green-400 font-bold rounded-sm ">interview</button>
-                        <button class="rejected-btn shadow-lg border border-red-400 px-4 py-2 text-red-400 font-bold rounded-sm">Rejected</button>
-                    </div>
-             </div>
-             <!-- main part-2 -->
-              <div>
-               <button class="btn-delete" > <i class="fa-regular fa-trash-can"></i></button>
-              </div>
+    </nav>
 
 
-        </div>
+    <section id="banner">
 
-        <!-- card -2 -->
-        <div class="card flex justify-between border border-white shadow-lg p-8">
-            <!-- main part-1 -->
-             <div class="space-y-6">
-                <!-- part -1 -->
-                 <div class="mb-4">
-                    <h1 class="fristCorp text-2xl font-semibold">WebFlow Agency</h1>
-                <p class="nativeDeveloper text-gray-400">Web Designer & Developer</p>
-                 </div>
-                 <!-- part -2 -->
-                  <div>
-                    <p class="remoteJob text-gray-400">Los Angeles, CA•Part-time •$80,000 - $120,000</p>
-                  </div>
-                  <!-- part -3 -->
-                    <p class="status">Not Applied</p>
-                    <p class="notes ">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p> 
+<nav class="banner-content">
+<div>
+    <h2> Hi, I  am </h2>
+<h1>Mary Hardy</h1>
+<p>Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning because as to society behaved moments.</p>
 
-                    <div class="flex gap-3">
-                        <button class="interview-btn shadow-lg border border-green-400 px-4 py-2 text-green-400 font-bold rounded-sm ">interview</button>
-                        <button class="rejected-btn shadow-lg border border-red-400 px-4 py-2 text-red-400 font-bold rounded-sm">Rejected</button>
-                    </div>
-             </div>
-             <!-- main part-2 -->
-              <div >
-               <button class="btn-delete" > <i class="fa-regular fa-trash-can"></i></button>
-              </div>
+<div class="banner-btn">
+    <nav><button class="btn"> <i class="fa-solid fa-download"></i>
+Download CV</button></nav>
+<nav><button class="contact"> <i class="fa-solid fa-phone"></i>
+Contact</button></nav>
+</div>
+</div>
+    <nav class="banner-image">
+        <img src="images/hardy.png" alt="">
+    </nav>
 
-
-        </div>
-
-        <!-- card -3 -->
-        <div class="card flex justify-between border border-white shadow-lg p-8">
-            <!-- main part-1 -->
-             <div class="space-y-6">
-                <!-- part -1 -->
-                 <div class="mb-4">
-                    <h1 class="fristCorp text-2xl font-semibold">DataViz Solutions</h1>
-                <p class="nativeDeveloper text-gray-400">Data Visualization Specialist</p>
-                 </div>
-                 <!-- part -2 -->
-                  <div>
-         <p class="remoteJob text-gray-400">Boston, MA • Full-time $125,000 - $165,000</p>
-                  </div>
-                  <!-- part -3 -->
-                    <p class="status">Not Applied</p>
-                    <p class="notes ">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.</p> 
-
-                    <div class="flex gap-3">
-                        <button class="interview-btn shadow-lg border border-green-400 px-4 py-2 text-green-400 font-bold rounded-sm ">interview</button>
-                        <button class="rejected-btn shadow-lg border border-red-400 px-4 py-2 text-red-400 font-bold rounded-sm">Rejected</button>
-                    </div>
-             </div>
-             <!-- main part-2 -->
-              <div >
-               <button class="btn-delete" > <i class="fa-regular fa-trash-can"></i></button>
-              </div>
-
-
-        </div>
-        <!-- card -4 -->
-        <div class="card flex justify-between border border-white shadow-lg p-8">
-            <!-- main part-1 -->
-             <div class="space-y-6">
-                <!-- part -1 -->
-                 <div class="mb-4">
-                    <h1 class="fristCorp text-2xl font-semibold">CloudFirst Inc</h1>
-                <p class="nativeDeveloper text-gray-400">Backend Developer</p>
-                 </div>
-                 <!-- part -2 -->
-                  <div>
-         <p class="remoteJob text-gray-400">Seattle, WA •Full-time • $140,000 - $190,000</p>
-                  </div>
-                  <!-- part -3 -->
-                    <p class="status">Not Applied</p>
-                    <p class="notes ">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p> 
-
-                    <div class="flex gap-3">
-                        <button class="interview-btn shadow-lg border border-green-400 px-4 py-2 text-green-400 font-bold rounded-sm ">interview</button>
-                        <button class="rejected-btn shadow-lg border border-red-400 px-4 py-2 text-red-400 font-bold rounded-sm">Rejected</button>
-                    </div>
-             </div>
-             <!-- main part-2 -->
-              <div >
-               <button class="btn-delete" > <i class="fa-regular fa-trash-can"></i></button>
-              </div>
-
-
-        </div>
-        <!-- card -5-->
-        <div class="card flex justify-between border border-white shadow-lg p-8">
-            <!-- main part-1 -->
-             <div class="space-y-6">
-                <!-- part -1 -->
-                 <div class="mb-4">
-                    <h1 class="fristCorp text-2xl font-semibold">Innovation Labs</h1>
-                <p class="nativeDeveloper text-gray-400">UI/UX Engineer</p>
-                 </div>
-                 <!-- part -2 -->
-                  <div>
-         <p class="remoteJob text-gray-400">Austin, TX • Full-time • $110,000 - $150,000</p>
-                  </div>
-                  <!-- part -3 -->
-                    <p class="status">Not Applied</p>
-                    <p class="notes ">Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p> 
-
-                    <div class="flex gap-3">
-                        <button class="interview-btn shadow-lg border border-green-400 px-4 py-2 text-green-400 font-bold rounded-sm ">interview</button>
-                        <button class="rejected-btn shadow-lg border border-red-400 px-4 py-2 text-red-400 font-bold rounded-sm">Rejected</button>
-                    </div>
-             </div>
-             <!-- main part-2 -->
-              <div >
-               <button class="btn-delete" > <i class="fa-regular fa-trash-can"></i></button>
-              </div>
-
-
-        </div>
-        <!-- card -6 -->
-        <div class="card flex justify-between border border-white shadow-lg p-8">
-            <!-- main part-1 -->
-             <div class="space-y-6">
-                <!-- part -1 -->
-                 <div class="mb-4">
-                    <h1 class="fristCorp text-2xl font-semibold">MegaCorp Solutions</h1>
-                <p class="nativeDeveloper text-gray-400">JavaScript Developer</p>
-                 </div>
-                 <!-- part -2 -->
-                  <div>
-         <p class="remoteJob text-gray-400">New York, NY • Full-time • $130,000 - $170,00</p>
-                  </div>
-                  <!-- part -3 -->
-                    <p class="status">Not Applied</p>
-                    <p class="notes ">Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</p> 
-
-                    <div class="flex gap-3">
-                        <button class="interview-btn shadow-lg border border-green-400 px-4 py-2 text-green-400 font-bold rounded-sm ">interview</button>
-                        <button class="rejected-btn shadow-lg border border-red-400 px-4 py-2 text-red-400 font-bold rounded-sm">Rejected</button>
-                    </div>
-             </div>
-             <!-- main part-2 -->
-              <div >
-               <button class="btn-delete" > <i class="fa-regular fa-trash-can"></i></button>
-              </div>
-
-
-        </div>
-        <!-- card -7 -->
-        <div class="card flex justify-between border border-white shadow-lg p-8">
-            <!-- main part-1 -->
-             <div class="space-y-6">
-                <!-- part -1 -->
-                 <div class="mb-4">
-                    <h1 class="fristCorp text-2xl font-semibold">StartupXYZ</h1>
-                <p class="nativeDeveloper text-gray-400">Full Stack Engineer</p>
-                 </div>
-                 <!-- part -2 -->
-                  <div>
-         <p class="remoteJob text-gray-400">Remote • Full-time • $120,000 - $160,000</p>
-                  </div>
-                  <!-- part -3 -->
-                    <p class="status">Not Applied</p>
-                    <p class="notes ">Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p> 
-
-                    <div class="flex gap-3">
-                        <button class="interview-btn shadow-lg border border-green-400 px-4 py-2 text-green-400 font-bold rounded-sm ">interview</button>
-                        <button class="rejected-btn shadow-lg border border-red-400 px-4 py-2 text-red-400 font-bold rounded-sm">Rejected</button>
-                    </div>
-             </div>
-             <!-- main part-2 -->
-              <div >
-               <button class="btn-delete" > <i class="fa-regular fa-trash-can"></i></button>
-              </div>
-
-
-        </div>
-        <!-- card -8-->
-        <div class="card flex justify-between border border-white shadow-lg p-8">
-            <!-- main part-1 -->
-             <div class="space-y-6">
-                <!-- part -1 -->
-                 <div class="mb-4">
-                    <h1 class="fristCorp text-2xl font-semibold">TechCorp Industries</h1>
-                <p class="nativeDeveloper text-gray-400">Senior Frontend Developer</p>
-                 </div>
-                 <!-- part -2 -->
-                  <div>
-         <p class="remoteJob text-gray-400">San Francisco, CA • Full-time • $130,000 - $175,000</p>
-                  </div>
-                  <!-- part -3 -->
-                    <p class="status">Not Applied</p>
-                    
-                    <div class="flex gap-3">
-                        <button class="interview-btn shadow-lg border border-green-400 px-4 py-2 text-green-400 font-bold rounded-sm ">interview</button>
-                        <button class="rejected-btn shadow-lg border border-red-400 px-4 py-2 text-red-400 font-bold rounded-sm">Rejected</button>
-                    </div>
-             </div>
-             <!-- main part-2 -->
-              <div >
-               <button class="btn-delete" > <i class="fa-regular fa-trash-can"></i></button>
-              </div>
-
-
-        </div>
+</nav>
 
     </section>
 
+</header>
+<!-- about section -->
 
-        <!-- Not Found Section -->
-        <section id="not-found-section" class="hidden">
-            <div class="bg-[#F1F2F4] p-[100px] space-y-5">
-                <div class="flex justify-center">
-                    <img src="./jobs.png" alt="">
-                </div>
+<section id="about">
+    <div class="about-container">
+<div class="section-heading">
+    <h2>About me</h2>
+    <p>I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional resulfs while working with me. Delivering work within time and budget which meets clients requirements in our mata.</p>
 
-                <div class="text-center">
-                    <h1 class="font-semibold text-2xl text-[#002C5C]">No jobs available</h1>
-                    <p class="text-[#64748B]">Check back soon for new job opportunities</p>
-                </div>
-            </div>
-        </section>
-    </main>
+</div>
 
-    <script src="./script.js"></script>
+<div class="about-info">
+
+
+<div class="info-card">
+
+<p>Name:</p>
+<h4>Mary Hardy</h4>
+</div>
+<div class="info-card">
+
+<p>Email:</p>
+<h4>info@gmail.com </h4>
+</div>
+<div class="info-card">
+
+<p>Date of birth:</p>
+<h4>11 November 1987 </h4>
+</div>
+<div class="info-card">
+
+<p>From:</p>
+<h4>Los Angeles, USA </h4>
+</div>
+
+</div>
+
+
+    </div>
+    
+</section>
+
+
+<section id="skills">
+
+<div class="skills-container">
+
+<div class="section-heading">
+    <h2>What I do</h2>
+    <p>I have more than 10 years experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies i use. Want to find out more  about my experience? Check out my online resume and project portfolio.</p>
+
+</div>
+
+<div class="skill-box">
+
+    <div class="skill-card">
+
+        <img src="images/icons/js.png" alt="">
+<h3>Vanilla JavaScript</h3>
+<p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+    </div>
+    <div class="skill-card">
+
+        <img src="images/icons/react.png" alt="">
+<h3>React</h3>
+<p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+    </div>
+    <div class="skill-card">
+
+        <img src="images/icons/nodejs.png" alt="">
+<h3>Node.js </h3>
+<p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+    </div>
+    <div class="skill-card">
+
+        <img src="images/icons/mongo.png" alt="">
+<h3> MongoDB</h3>
+<p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+    </div>
+
+</div>
+
+</div>
+
+
+</section>
+
+<section id="resume">
+    <div class="section-heading">
+        <h2>A summary of My Resume</h2>
+    </div>
+<div class="resume-conteiner">
+<div class="educational">
+<h2 class="section-title">My Education</h2>
+<div class="resume-card">
+<h3 class="card-titel">Master in Computer Engineering</h3>
+<p class="card-info">Harvard University / 2015 - 2017</p>
+<p class="card-text">List skill/technologies here. You can change the icon above 
+to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+</div>
+<hr>
+<div class="resume-card">
+<h3 class="card-titel">Master in Computer Engineering</h3>
+<p class="card-info">Harvard University / 2015 - 2017</p>
+<p class="card-text">List skill/technologies here. You can change the icon above 
+to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+</div>
+<hr>
+<div class="resume-card">
+<h3 class="card-titel">Master in Computer Engineering</h3>
+<p class="card-info">Harvard University / 2015 - 2017</p>
+<p class="card-text">List skill/technologies here. You can change the icon above 
+to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+</div>
+<hr>
+</div>
+
+<div class="experience">
+<h2 class="section-title">My Experience</h2>
+<div class="resume-card">
+<h3 class="card-titel">Sr. Font End Developer</h3>
+<p class="card-info">Apple Inc / 2020 - Current</p>
+<p class="card-text">List skill/technologies here. You can change the icon above 
+to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+</div>
+<hr>
+<div class="resume-card">
+<h3 class="card-titel">Jr. Font End Developer</h3>
+<p class="card-info">Dribbble Inc / 2018 - 2022</p>
+<p class="card-text">List skill/technologies here. You can change the icon above 
+to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+</div>
+<hr>
+<div class="resume-card">
+<h3 class="card-titel"> HTML Developer</h3>
+<p class="card-info">Adobe Inc / 2017 - 2018</p>
+<p class="card-text">List skill/technologies here. You can change the icon above 
+to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+</div>
+<hr>
+</div>
+</div>
+
+<div class="text-center">
+    <button class="btn"> <i class="fa-solid fa-download"></i>
+Download CV</button>
+</div>
+
+</section>
+
+<footer>
+    <section class="footer-container">
+        <div class="social"> 
+            <h2>Lets Connect</h2>
+            <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
+
+<div class="icons">
+    <a href=""><img src="images/icons/facebook.png" alt=""></a>
+    <a href=""><img src="images/icons/twitter.png" alt=""></a>
+    <a href=""><img src="images/icons/insta.png" alt=""></a>
+</div>
+
+        </div>
+        <form  class="form">
+<h2>Let’s Message me</h2>
+<div  class="">
+<input  class="name" type="text" name="" id="" placeholder="Your Name">
+</div>
+<div>
+    <input  class="name" type="text" name="" id="" placeholder="Your Email">
+</div>
+
+<div class="">
+ <textarea rows="7" name="" id="" placeholder="Message"></textarea>
+</div>
+<input class="btn" type="submit" value="submit">
+        </form>
+
+    </section>
+</footer>
+
+
+
 </body>
 </html>
